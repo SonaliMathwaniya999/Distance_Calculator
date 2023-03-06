@@ -19,7 +19,7 @@ public class GeocodeController {
                .url("https://google-maps-geocoding.p.rapidapi.com/geocode/json?language=en&address=" + encodedAddress)
                .get()
                .addHeader("x-rapidapi-host", "google-maps-geocoding.p.rapidapi.com")
-               .addHeader("x-rapidapi-key", "AIzaSyCxlG65X7YNSqG7cEFO79FYpWJi-zbVjB0"/*  Use your API Key here */)
+               .addHeader("x-rapidapi-key", "{use your api}"/*  Use your API Key here */)
                .build();
        ResponseBody responseBody = client.newCall(request).execute().body();
        ObjectMapper objectMapper = new ObjectMapper();
@@ -28,5 +28,4 @@ public class GeocodeController {
    }
 }
 
-
-//180e873838msh4b38145b7b1964dp15edf5jsne984a36f5ba6
+ 
